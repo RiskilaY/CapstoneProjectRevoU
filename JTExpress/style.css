@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -41,6 +42,9 @@ header nav ul a {
   text-decoration: none;
   color: white;
   font-weight: bolder;
+}
+header ul a:hover{
+  color: rgb(65, 59, 59);
 }
 
 .container {
@@ -187,4 +191,73 @@ header nav ul a {
 
 .footer p {
   color: #c1121f;
+}
+/*Contact Massage*/
+
+.container-us{
+  min-width: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  
+}
+
+form{
+  margin: 5cm 2cm 0 0;
+  background-color: #c1121f;
+  display: flex;
+  flex-direction: column;
+  padding:  10px 15px 10px 15px;
+  width: 10cm;
+  max-width: 600px;
+  border-radius: 30px;
+}
+
+form h1{
+  color: white;
+  font-weight: 800;
+  font-size: 1.7em;
+  padding: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+form input, textarea{
+  border: 0;
+  margin: 10px 0 0;
+  padding: 20px;
+  outline: none;
+  background: #e2e2e2;
+  font-size: 16px;
+  border-radius: 1em;
+  transition: all 0.5s;
+}
+
+form input:focus, form textarea:focus{ 
+  background: white
+}
+form textarea{
+  resize: none;
+}
+
+form button{
+  padding: 0.8em ;
+  background: white;
+  color: #c1121f;
+  font-size: 1.2em;
+  border: 1;
+  border-color: transparent;
+  outline:none;
+  cursor: pointer;
+  width: 10em;
+  margin: 1em auto 0.5em;
+  border-radius: 2em;
+}
+form button:hover{
+  background: #c1121f;
+  color:white ;
+  border-color: white;
+  font-weight: bolder;
+
 }
