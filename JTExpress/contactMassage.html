@@ -24,10 +24,14 @@
                 <input name="name" type="text" placeholder="Your Name">
                 <input name="email" type="email" placeholder="Email">
                 <textarea name="massage" placeholder="Your Massage" rows="Your Message"></textarea>
-                <button type="submit" name="myButton">Send</button>
+                <button type="submit" onclick="myButton()">Send</button>
             </form>
         </div>
     </div>
-    
+    <script>
+        function myButton(){
+            alert ("Pesan sudah terkirim, mohon tunggu beberapa saat ya ^^");
+        }
+    </script>
 </body>
 </html>
