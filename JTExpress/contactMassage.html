@@ -16,7 +16,44 @@
             <ul><a href="file:///E:/latihan%20website/JTExpress/index.html#"> <img src="assets/home.png" alt=""> HOME</a></ul>
         </nav>
     </header>
-
+    <!--SideBar (Start)-->
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"></span>
+                    <span class="title">Check Your Package</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"></span>
+                    <span class="title">Tracking</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"></span>
+                    <span class="title">Shipping rate</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"></span>
+                    <span class="title">Drop Poin</span>
+                </a>
+            </li>
+            <li>
+                <a href="file:///E:/latihan%20website/JTExpress/contactMassage.html?name=&email=&massage=&myButton=#">
+                    <span class="icon"></span>
+                    <span class="title">Contact Us</span>
+                </a>
+            </li>
+        </ul>
+        <div class="toggle"></div>
+    </div>
+    </div>
+    <!--SideBar (Finish)-->
     <div class="container-us">
             <form>
                 <h1>Contact Us</h1>
@@ -29,7 +66,14 @@
     </div>
     <script>
         function myButton(){
-            alert ("Pesan sudah terkirim, mohon tunggu beberapa saat ya");
+            alert ("Pesan telah terkirim, mohon tunggu beberapa saat ya ^^");
+        }
+
+          //Side Bar
+          let navigation = document.querySelector('.navigation');
+        let toggle = document.querySelector('.toggle');
+        toggle.onclick = function(){
+            navigation.classList.toggle('active');
         }
     </script>
 </body>
