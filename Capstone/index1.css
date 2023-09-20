@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Inter:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', 'cursive';
+
+  }
+  
+  header {
+    background-color: #c1121f;
+    height: 110px;
+    margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  header nav ul a img {
+    padding: 0px 10px 20px 0px;
+    margin-top: -5px;
+  }
+  
+  #logo,
+  header nav {
+    height: 110px;
+  }
+  
+  header img {
+    float: left;
+    padding-left: 110px;
+  }
+  
+  header nav ul {
+    float: right;
+    margin-top: -10px;
+    padding: 58px 0px 0px 0px;
+  }
+  
+  header nav ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    padding-right: 100px;
+  }
+  header ul a:hover{
+    color: rgb(65, 59, 59);
+  }
+  
+  .container {
+    padding-top: 110px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 800px;
+  }
+  
+  .container img {
+    width: 100%;
+    height: 800px;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 500%;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .slider.slide-1 {
+    transform: translateX(0);
+  }
+  .slider.slide-2 {
+    transform: translateX(-20%);
+  }
+  .slider.slide-3 {
+    transform: translateX(-40%);
+  }
+  .slider.slide-4 {
+    transform: translateX(-60%);
+  }
+  .slider.slide-5 {
+    transform: translateX(-80%);
+  }
+  
+  .break {
+    height: 80px;
+  }
+  
+  .excess {
+    background-image: url(assets/background-bawah.png);
+    height: 640px;
+    text-align: center;
+  }
+  
+  .excess h1 {
+    color: white;
+    padding: 20px 0px 30px 0px;
+    font-size: 60px;
+  }
+  
+  .excess button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  .container-card {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 300px;
+    height: 340px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  .card h3 {
+    color: #c1121f;
+    padding: 20px 0px 20px 0px;
+  }
+  
+  .about {
+    background-color: #c1121f;
+    padding: 50px 80px;
+  }
+  
+  .about h3 {
+    font-weight: bolder;
+    margin-top: 20px;
+  }
+  
+  .footer-alamat {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    color: white;
+  }
+  
+  .kantorPusat {
+    width: 50%;
+  }
+  
+  .tentangJTE,
+  .services {
+    width: 20%;
+  }
+  
+  .sosmed ul{
+    float: right;
+    justify-content: space-between;
+    margin: -15px 10px 0;
+  }
+  
+  .sosmed ul a{
+    display: grid;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #c1121f;
+    border-radius: 50%;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    }
+  
+  .sosmed a:hover{
+    color: #000;
+  }
+  
+  .footer {
+    display: flex;
+    margin: 0px 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer p {
+    color: #c1121f;
+  }
+  /*SideBar*/
+  .navigation{
+    position: fixed;
+    top: 115px;
+    right: -65px;
+    bottom: 0;
+    background: #c1121f;
+    width: 80px;
+    border-left: 15px solid #c1121f;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 15px 15px 25px rgba(0,0,0,0.05);
+    transition: 0.5s;
+    z-index: 9999;
+  }
+  .navigation ul li a span{
+    z-index: 9999;
+  }
+  .navigation.active{
+    width: 300px;
+    border-radius: 20px;
+  }
+  .toggle{
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .toggle::before{
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 3px;
+  border-radius: 3px;
+  background: #365fa1;
+  transform: translateY(-5px);
+  transition: 1s;
+  }
+  .toggle::after{
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    border-radius: 3px;
+    background: #365fa1;
+    transform: translateY(5px);
+    transition: 1s;
+    }
+  .navigation.active .toggle::before{
+    transform: translateY(0px) rotate(-405deg);
+  }
+  .navigation.active .toggle::after{
+    transform: translateY(0px) rotate(225deg);
+  }
+  .navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+  }
+  .navigation ul li:hover{
+    background: white;
+  }
+  .navigation ul li:nth-child(1){
+    left: 35px;
+    top: 20px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+    background: none;
+  }
+  .navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+  }
+  .navigation ul li:hover:not(:first-child) a{
+    color: #000;
+  }
+  
+  /*Contact Massage*/
+  .container-us{
+    min-width: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  
+  form{
+    margin: 5cm 2cm 0 0;
+    background-color: #c1121f;
+    display: flex;
+    flex-direction: column;
+    padding:  10px 15px 10px 15px;
+    width: 10cm;
+    max-width: 600px;
+    border-radius: 30px;
+  }
+  
+  form h1{
+    color: white;
+    font-weight: 800;
+    font-size: 1.7em;
+    padding: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  form input, textarea{
+    border: 0;
+    margin: 10px 0 0;
+    padding: 20px;
+    outline: none;
+    background: #e2e2e2;
+    font-size: 16px;
+    border-radius: 1em;
+    transition: all 0.5s;
+  }
+  
+  form input:focus, form textarea:focus{ 
+    background: white
+  }
+  form textarea{
+    resize: none;
+  }
+  form button{
+    padding: 0.8em ;
+    background: white;
+    color: #c1121f;
+    font-size: 1.2em;
+    border: 1;
+    border-color: transparent;
+    outline:none;
+    cursor: pointer;
+    width: 10em;
+    margin: 1em auto 0.5em;
+    border-radius: 2em;
+  }
+  form button:hover{
+    background: #c1121f;
+    color:white ;
+    border-color: white;
+    font-weight: bolder;
+  }

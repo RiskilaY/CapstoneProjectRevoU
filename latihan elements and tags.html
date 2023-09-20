@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .responsive-example{
+            color: blue;
+        }
+        @media (max-width: 1200px){
+            .responsive-example{
+                color: red;
+            }
+        }
+        @media (max-width: 800px){
+            .responsive-example{
+                color: yellow;
+            } 
+        }
+        @media (max-width: 300px){
+            .responsive-example{
+                color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Headling 1</h1>
+    <h2>Headling 2</h2>
+    <h3>Headling 3</h3>
+
+    <p>This is a paragraph of text. It can contain <a href="#">links</a> and other <strong>formatted</strong>elements.</p>
+
+    <h2>List</h2>
+    <h3>Ordered List (OL) </h3>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <h2>Links</h2>
+    <p>Visit <a href="https://www.Example.com">Example.com</a>for more informatiion.</p>
+
+    <h2>Images</h2>
+    <img src="https://via.placeholder.com/150" alt="placeholder Image">
+
+    <h2>Tables</h2>
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    </table>
+
+    <h1> Contact Us</h1>
+    <form action="/submit" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter yout email" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender: </label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group checkbox-group">
+            <label>Interests</label>
+            <input type="checkbox" id="interest1" name="interest[]" value="reading">
+            <label for="interest1">Reading</label>
+            <input type="checkbox" id="interest2" name="interest[]" value="traveling">
+            <label for="interest2">Traveling</label>
+            <input type="checkbox" id="interest3" name="interest[]" value="sports">
+            <label for="interest3">Sports</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+<br>
+    <form action="subit_form.php" method="get">
+        <div>
+            <label for="name">Name (at least 2 characters): </label>
+            <input type="text" id="name" name="name" placeholder="Enter name" minlength="2" required>
+        </div>
+        <div>
+            <label for="age">Age (between 18 and 99):</label>
+            <input type="number" id="age" name="age" min="18" max="99" required>
+        </div>
+        <div>
+            <label for="phone">Phone (Format: xxx-xxx-xxxx): </label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+        </div>
+        <button type="submit">Submit</button>
+
+    <section>
+        <div class="multimedia">
+            <video src="multimedia/4K Animated cartoon Background _ Forest Scenery Animation _ Beautiful Night loop animation.mp4" muted loop autoplay></video>
+        </div>
+    </section>
+    <div class="container">
+        <h1 class="responsive-example">lorem ipsum</h1>
+    </div>
+</body>
+</html>
